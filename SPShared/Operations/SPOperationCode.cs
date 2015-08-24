@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace SPServer.Operations
+namespace SPShared.Operations
 {
     /// <summary>
     ///  Update flight controls
