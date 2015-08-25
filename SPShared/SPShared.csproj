@@ -31,6 +31,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Artemis_Mono">
+      <HintPath>Library\Artemis\Artemis_Mono.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -41,10 +44,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ECS\Components\Transform.cs" />
+    <Compile Include="ECS\Components\Velocity.cs" />
+    <Compile Include="ECS\Systems\PhysicsSystem.cs" />
     <Compile Include="Events\SPEventCode.cs" />
     <Compile Include="Operations\SPOperationCode.cs" />
     <Compile Include="Operations\SPParameterCode.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="ECS\Entities\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
