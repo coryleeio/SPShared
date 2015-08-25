@@ -107,7 +107,8 @@ namespace Artemis
             this.GroupManager = new GroupManager();
             this.PoolCleanupDelay = 10;
 
-            this.dateTime = DateTime.Now;
+            
+            this.dateTime = FastDateTime.Now;
             if(initializeAll)
                 this.InitializeAll(processAttributes);
         }
@@ -337,8 +338,8 @@ namespace Artemis
         /// <summary>Updates the EntityWorld.</summary>
         public void Update()
         {
-            long deltaTicks = (DateTime.Now - this.dateTime).Ticks;
-            this.dateTime = DateTime.Now;
+            long deltaTicks = (FastDateTime.Now - this.dateTime).Ticks;
+            this.dateTime = FastDateTime.Now;
             this.Update(deltaTicks);
         }
 

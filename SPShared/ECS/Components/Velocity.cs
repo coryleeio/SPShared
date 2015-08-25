@@ -5,7 +5,9 @@ using System.Text;
 
 namespace SPShared.ECS.Components
 {
-    class Velocity : Artemis.ComponentPoolable
+    class Velocity
     {
+
+        Velocity() {}
     }
 }
