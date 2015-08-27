@@ -52,12 +52,6 @@
   <ItemGroup>
     <Folder Include="ECS\Entities\" />
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="artemis_CSharp\Artemis_Mono\Artemis_Mono.csproj">
-      <Project>{93a803f6-64e4-4fce-98cc-9e6101bdac69}</Project>
-      <Name>Artemis_Mono</Name>
-    </ProjectReference>
-  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
