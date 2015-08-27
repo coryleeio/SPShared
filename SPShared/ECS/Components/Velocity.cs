@@ -8,6 +8,6 @@ namespace SPShared.ECS.Components
     class Velocity
     {
 
-        Velocity() {}
+        Velocity() { }
     }
 }

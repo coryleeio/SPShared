@@ -6,12 +6,7 @@ using Artemis;
 
 namespace SPShared.ECS.Components
 {
-    class Transform
+    public class Transform : ComponentPoolable
     {
-        double x = 0f;
-        double y = 0f;
-        double z = 0f;
-
-        Transform() {}
     }
 }
