@@ -42,9 +42,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ECS\Components\Transform.cs" />
-    <Compile Include="ECS\Components\Velocity.cs" />
+    <Compile Include="ECS\Components\PhysicsBody.cs" />
     <Compile Include="ECS\Systems\PhysicsSystem.cs" />
+    <Compile Include="ECS\Templates\ShipTemplate.cs" />
+    <Compile Include="ECS\Utilities\Constraint2D.cs" />
     <Compile Include="Events\SPEventCode.cs" />
     <Compile Include="Operations\SPOperationCode.cs" />
     <Compile Include="Operations\SPParameterCode.cs" />
